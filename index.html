@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -12,28 +14,30 @@
 
         <div class="inputBox">
             <input type="text" class="passBox" id="passBox" disabled>
-
+            <span class="material-icons" id="copy">
+                content_copy
+                </span>
         </div>
-        <input type="range" min="1" max="20" value="8" id="inputSlider">
+        <input type="range" min="1" max="30" value="8" id="inputSlider">
         <div class="row">
             <p>Password Length</p>
             <span id="sliderValue"></span>
         </div>
         <div class="row">
             <label for="lowercase">Include Lowercase Letters (a-z)</label>
-            <input type="checkbox" name="lowercase" id="lowercase">
+            <input type="checkbox" name="lowercase" id="lowercase" checked>
         </div>
         <div class="row">
             <label for="UpperCase">Include UpperCase Letters (A-Z)</label>
-            <input type="checkbox" name="lowercase" id="UpperCase">
+            <input type="checkbox" name="lowercase" id="UpperCase" checked>
         </div>
         <div class="row">
             <label for="symbols">Include Symbols (@-*)</label>
-            <input type="checkbox" name="symbols" id="symbols">
+            <input type="checkbox" name="symbols" id="symbols" checked>
         </div>
         <div class="row">
-            <label for="Numbers">Include Numbers (A-Z)</label>
-            <input type="checkbox" name="Numbers" id="Numbers">
+            <label for="Numbers">Include Numbers (0 - 9)</label>
+            <input type="checkbox" name="Numbers" id="Numbers" checked>
         </div>
         <button type="button" class="genBtn" id="genBtn">Generate Password</button>
     </div>
